@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <titlef>
+                The   j Q u e r y   S e l e c t o r   Example
+        </titlef>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+                $('#btnChange').click(function(){
+                    $('#dvDemo').attr('id','dvDemoNew');
+                    $('#dvDemoNew').html('My New Id is <b>dvDemoNew</b>');
+                });
+
+                $('btnReset').click(function(){
+                    $('#dvDemoNew').attr('id','dvDemo');
+                    $('#dvDemo').html('My Id is dvDemo');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id='dvDemo'>
+            My Id is dvDemo.
+        </div>
+        <br/>
+        <input type="button" id="btnChange" value="Change Id"/>
+        <input type="button" id="btnReset" value="Reset Id"/>
+
+    </body>
+</html>
